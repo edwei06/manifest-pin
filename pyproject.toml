@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manifest-pin"
+version = "0.1.0"
+description = "Portable SHA-256 manifests for local folders and release bundles"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "edwei06"}]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+manifest-pin = "manifest_pin.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["manifest_pin*"]

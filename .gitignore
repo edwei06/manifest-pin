@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*.har
+!examples/synthetic.har
+.DS_Store
